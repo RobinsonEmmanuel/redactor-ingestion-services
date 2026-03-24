@@ -1,6 +1,5 @@
 import { FastifyInstance } from 'fastify';
 import { Db, ObjectId } from 'mongodb';
-import { z } from 'zod';
 import { env } from '../config/env.js';
 import { COLLECTIONS } from '../config/collections.js';
 
