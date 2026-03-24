@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "steps": {
+    "build": {
+      "commands": [
+        "npm run build --workspace=packages/core-model",
+        "npm run build --workspace=packages/ingestion-wp",
+        "npm run build --workspace=apps/ingestion-service"
+      ]
+    }
+  },
+  "deploy": {
+    "startCommand": "node apps/ingestion-service/dist/index.js"
+  }
+}
