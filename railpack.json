@@ -5,11 +5,9 @@
       "commands": [
         "npm run build --workspace=packages/core-model",
         "npm run build --workspace=packages/ingestion-wp",
-        "npm run build --workspace=apps/ingestion-service"
+        "npm run build --workspace=apps/ingestion-service",
+        "npm run build --workspace=apps/poi-service"
       ]
     }
-  },
-  "deploy": {
-    "startCommand": "node apps/ingestion-service/dist/index.js"
   }
 }
