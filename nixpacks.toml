@@ -1,0 +1,6 @@
+[phases.build]
+cmds = [
+  "npm run build --workspace=packages/core-model",
+  "npm run build --workspace=packages/ingestion-wp",
+  "npm run build --workspace=apps/ingestion-service",
+]
