@@ -1,0 +1,27 @@
+{
+  "name": "redactor-ingestion-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Microservices d'ingestion WordPress et extraction POI pour Redactor Guide",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:ingestion": "npm run dev --workspace=apps/ingestion-service",
+    "dev:poi": "npm run dev --workspace=apps/poi-service",
+    "build": "turbo run build",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "turbo": "^1.12.4",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
